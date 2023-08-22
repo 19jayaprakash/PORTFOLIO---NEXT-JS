@@ -1,0 +1,39 @@
+
+  .imgwrap {
+    position: relative;
+    padding: 30px;
+  }
+  .imgwrap::after {
+    content: '';
+    border-radius: 999px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: conic-gradient(
+      from 30deg,
+      #6be89b,
+      #0076a5 46%,
+      transparent
+    );
+    -webkit-mask: radial-gradient(
+      farthest-side,
+      transparent calc(100% - 3px),
+      #fff calc(100% - 2px)
+    );
+    mask: radial-gradient(
+      farthest-side,
+      transparent calc(100% - 3px),
+      #fff calc(100% - 2px)
+    );
+  }
+  .img {
+    border-radius: 999px;
+    display: block;
+    width: calc(100vw - 80px);
+    max-width: 360px;
+    height: auto;
+  }
+  
